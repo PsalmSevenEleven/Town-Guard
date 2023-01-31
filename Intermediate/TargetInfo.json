@@ -1,0 +1,24 @@
+{
+	"Targets": [
+		{
+			"Name": "Town_Guard",
+			"Path": "D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town_Guard\\Source\\Town_Guard.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Town_GuardClient",
+			"Path": "D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town_Guard\\Source\\Town_GuardClient.Target.cs",
+			"Type": "Client"
+		},
+		{
+			"Name": "Town_GuardEditor",
+			"Path": "D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town_Guard\\Source\\Town_GuardEditor.Target.cs",
+			"Type": "Editor"
+		},
+		{
+			"Name": "Town_GuardServer",
+			"Path": "D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town_Guard\\Source\\Town_GuardServer.Target.cs",
+			"Type": "Server"
+		}
+	]
+}

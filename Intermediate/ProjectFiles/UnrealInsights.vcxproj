@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|x64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|x64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|x64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|x64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|x64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2A0E4F11-B849-36B2-96ED-FB2E8CEB75D5}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>UnrealInsights</RootNamespace>
+    <PlatformToolset>v142</PlatformToolset>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <NMakeUseOemCodePage>true</NMakeUseOemCodePage>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" UnrealInsights Win64 Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealInsights Win64 Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" UnrealInsights Win64 Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealInsights-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" UnrealInsights Win64 DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealInsights Win64 DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" UnrealInsights Win64 DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealInsights-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" UnrealInsights Win64 Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealInsights Win64 Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" UnrealInsights Win64 Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealInsights.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" UnrealInsights Win64 Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealInsights Win64 Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" UnrealInsights Win64 Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealInsights-Win64-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" UnrealInsights Win64 Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealInsights Win64 Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" UnrealInsights Win64 Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealInsights-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);D:\Program Files\Epic Games\UE_5.1\Engine\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Launch\Private;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Private;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\AppFramework\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\AppFramework\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AppFramework\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Core\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Core\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\TraceLog\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Core\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceLog\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceLog\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\CoreUObject\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\CoreUObject\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\CoreUObject\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\ApplicationCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\ApplicationCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\ApplicationCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\RHI\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\RHI\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\RHI\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Slate\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Slate\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Slate\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\InputCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\InputCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\InputCore\Classes;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\InputCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Json\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Json\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Json\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\SlateCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\SlateCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SlateCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\ImageWrapper\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\ImageWrapper\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\ImageWrapper\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\ImageCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\ImageCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\ImageCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Projects\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Projects\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Projects\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\SourceCodeAccess\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\SourceCodeAccess\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\SourceCodeAccess\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Settings\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Settings\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\Settings\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\StandaloneRenderer\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\StandaloneRenderer\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\StandaloneRenderer\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TargetPlatform\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TargetPlatform\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TargetPlatform\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\DeveloperSettings\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\DeveloperSettings\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\DeveloperSettings\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\AudioPlatformConfiguration\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\AudioPlatformConfiguration\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AudioPlatformConfiguration\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\DesktopPlatform\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\DesktopPlatform\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\DesktopPlatform\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Analytics\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Analytics\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Analytics;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Analytics\Analytics\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TextureFormat\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TextureFormat\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TextureFormat\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceInsights\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceInsights\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TraceInsights\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Cbor\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Cbor\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Cbor\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\RenderCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\RenderCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\RenderCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Sockets\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\Sockets\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Sockets\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\NetCommon\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\NetCommon\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Net;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Net\Common\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceAnalysis\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceAnalysis\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TraceAnalysis\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceServices\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\TraceServices\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TraceServices\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\WorkspaceMenuStructure\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\WorkspaceMenuStructure\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Editor;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Editor\WorkspaceMenuStructure\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\XmlParser\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\XmlParser\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\XmlParser\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\VisualStudioSourceCodeAccess\Intermediate\Build\Win64\UnrealInsights\Inc\VSSCA\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\VisualStudioSourceCodeAccess\Intermediate\Build\Win64\UnrealInsights\Inc\VSSCA\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\VisualStudioSourceCodeAccess\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\SlateReflector\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\SlateReflector\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\SlateReflector\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\UnrealInsights\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Inc\UnrealInsights\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Programs;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Launch\Public;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt;;</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\UnrealInsights.Target.cs"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Programs\UnrealInsights\Config\DefaultEngine.ini"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Programs\UnrealInsights\Config\DefaultUnrealInsightsSettings.ini"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\UnrealInsights.Build.cs"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Private\UnrealInsightsMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Private\UnrealInsightsMain.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Private\UserInterfaceCommand.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Private\UserInterfaceCommand.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Private\IOS\IOSUnrealInsightsMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Private\Linux\LinuxUnrealInsightsMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Private\Mac\MacUnrealInsightsMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Private\Windows\WindowsUnrealInsightsMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealInsights\Development\UnrealInsights\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Linux\UnrealInsights.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Linux\UTrace.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\Info.plist"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\make_icns.sh"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.icns"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.icns"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_128x128.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_128x128@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_16x16.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_16x16@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_256x256.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_256x256@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_32x32.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_32x32@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_512x512.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UnrealInsights.iconset\icon_512x512@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_128x128.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_128x128@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_16x16.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_16x16@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_256x256.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_256x256@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_32x32.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_32x32@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_512x512.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Mac\UTrace.iconset\icon_512x512@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\make_ico.py"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights.ico"/>
+    <ResourceCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights.rc"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace.ico"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights\icon_16x16.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights\icon_24x24.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights\icon_256x256.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights\icon_32x32.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UnrealInsights\icon_48x48.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace\icon_16x16.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace\icon_24x24.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace\icon_256x256.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace\icon_32x32.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealInsights\Resources\Windows\UTrace\icon_48x48.png"/>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

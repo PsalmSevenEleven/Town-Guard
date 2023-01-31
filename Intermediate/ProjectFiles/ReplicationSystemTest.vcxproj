@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Invalid|arm64">
+      <Configuration>Invalid</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Invalid|Win64">
+      <Configuration>Invalid</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|x64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|arm64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|Win64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Debug_Program|x64">
+      <Configuration>Android_Debug_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Debug_Program|arm64">
+      <Configuration>Android_Debug_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Debug_Program|Win64">
+      <Configuration>Android_Debug_Program</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|x64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|arm64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|Win64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_DebugGame_Program|x64">
+      <Configuration>Android_DebugGame_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_DebugGame_Program|arm64">
+      <Configuration>Android_DebugGame_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_DebugGame_Program|Win64">
+      <Configuration>Android_DebugGame_Program</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|x64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|arm64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|Win64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Development_Program|x64">
+      <Configuration>Android_Development_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Development_Program|arm64">
+      <Configuration>Android_Development_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Development_Program|Win64">
+      <Configuration>Android_Development_Program</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|x64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|arm64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|Win64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Test_Program|x64">
+      <Configuration>Android_Test_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Test_Program|arm64">
+      <Configuration>Android_Test_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Test_Program|Win64">
+      <Configuration>Android_Test_Program</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|x64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|arm64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|Win64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Shipping_Program|x64">
+      <Configuration>Android_Shipping_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Shipping_Program|arm64">
+      <Configuration>Android_Shipping_Program</Configuration>
+      <Platform>arm64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Android_Shipping_Program|Win64">
+      <Configuration>Android_Shipping_Program</Configuration>
+      <Platform>Win64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{49D1CEDA-B62C-36C7-98E8-8EA21F9146A2}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>ReplicationSystemTest</RootNamespace>
+    <PlatformToolset>v142</PlatformToolset>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <NMakeUseOemCodePage>true</NMakeUseOemCodePage>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Debug_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Test_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping_Program|arm64'" Label="Configuration">
+		<AppContainerApplication>true</AppContainerApplication>
+		<ApplicationType>Windows Store</ApplicationType>
+		<ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+		<WindowsAppContainer>true</WindowsAppContainer>
+		<AppxPackage>true</AppxPackage>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Debug_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Debug_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Debug_Program|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Program|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Program|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Test_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Test_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Test_Program|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping_Program|arm64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping_Program|Win64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|arm64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|Win64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest Win64 Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest Win64 Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest Win64 Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\ReplicationSystemTest-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest HoloLens Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest HoloLens Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest HoloLens Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\HoloLens\ReplicationSystemTest-HoloLens-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Android_Debug_Program|Win64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Debug_Program|Win64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest Android Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest Android Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest Android Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Android\ReplicationSystemTest-Android-Debug.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest Win64 DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest Win64 DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest Win64 DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\ReplicationSystemTest-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest HoloLens DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest HoloLens DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest HoloLens DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\HoloLens\ReplicationSystemTest-HoloLens-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Program|Win64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_DebugGame_Program|Win64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest Android DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest Android DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest Android DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Android\ReplicationSystemTest-Android-DebugGame.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest Win64 Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest Win64 Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest Win64 Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\ReplicationSystemTest.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest HoloLens Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest HoloLens Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest HoloLens Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\HoloLens\ReplicationSystemTest.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Program|Win64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Development_Program|Win64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest Android Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest Android Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest Android Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Android\ReplicationSystemTest.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest Win64 Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest Win64 Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest Win64 Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\ReplicationSystemTest-Win64-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest HoloLens Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest HoloLens Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest HoloLens Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\HoloLens\ReplicationSystemTest-HoloLens-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Android_Test_Program|Win64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Test_Program|Win64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest Android Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest Android Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest Android Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Android\ReplicationSystemTest-Android-Test.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest Win64 Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest Win64 Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest Win64 Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\ReplicationSystemTest-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|arm64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest HoloLens Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest HoloLens Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest HoloLens Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\HoloLens\ReplicationSystemTest-HoloLens-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping_Program|Win64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Android_Shipping_Program|Win64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" ReplicationSystemTest Android Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" ReplicationSystemTest Android Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" ReplicationSystemTest Android Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Android\ReplicationSystemTest-Android-Shipping.so</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);D:\Program Files\Epic Games\UE_5.1\Engine\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Launch\Private;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\ReplicationSystemTest\Private;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ApplicationCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ApplicationCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\ApplicationCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Core\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Core\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\TraceLog\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Core\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TraceLog\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TraceLog\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\RHI\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\RHI\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\RHI\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AutomationController\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AutomationController\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\AutomationController\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\CoreUObject\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\CoreUObject\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\CoreUObject\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AutomationTest\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AutomationTest\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AutomationTest\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AutomationWorker\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AutomationWorker\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AutomationWorker\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Projects\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Projects\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Projects\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Json\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Json\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Json\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Engine\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Engine\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Shaders\Shared;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Engine\Classes;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Engine\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\CoreOnline\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\CoreOnline\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\CoreOnline\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\NetCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\NetCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Net;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Net\Core\Classes;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Net\Core\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\NetCommon\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\NetCommon\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Net\Common\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ImageCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ImageCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\ImageCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\JsonUtilities\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\JsonUtilities\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\JsonUtilities\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SlateCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SlateCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SlateCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\InputCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\InputCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\InputCore\Classes;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\InputCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Slate\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Slate\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Slate\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ImageWrapper\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ImageWrapper\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\ImageWrapper\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Messaging\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Messaging\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Messaging\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MessagingCommon\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MessagingCommon\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\MessagingCommon\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\RenderCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\RenderCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\RenderCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AnalyticsET\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AnalyticsET\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Analytics;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Analytics\AnalyticsET\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Analytics\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Analytics\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Analytics\Analytics\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Sockets\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Sockets\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Sockets\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AssetRegistry\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AssetRegistry\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AssetRegistry\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\EngineMessages\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\EngineMessages\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\EngineMessages\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\EngineSettings\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\EngineSettings\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\EngineSettings\Classes;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\EngineSettings\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SynthBenchmark\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SynthBenchmark\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SynthBenchmark\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Renderer\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Renderer\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Renderer\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\GameplayTags\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\GameplayTags\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\GameplayTags\Classes;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\GameplayTags\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\DeveloperSettings\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\DeveloperSettings\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\DeveloperSettings\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\PacketHandler\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\PacketHandler\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\PacketHandlers;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\PacketHandlers\PacketHandler\Classes;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\PacketHandlers\PacketHandler\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ReliableHComp\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ReliableHComp\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\PacketHandlers\ReliabilityHandlerComponent\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AudioPlatformConfiguration\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AudioPlatformConfiguration\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AudioPlatformConfiguration\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MeshDescription\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MeshDescription\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\MeshDescription\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\StaticMeshDescription\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\StaticMeshDescription\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\StaticMeshDescription\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SkeletalMeshDescription\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SkeletalMeshDescription\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SkeletalMeshDescription\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AnimationCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AnimationCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AnimationCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\PakFile\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\PakFile\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\PakFile\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\RSA\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\RSA\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\RSA\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\NetworkReplayStreaming\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\NetworkReplayStreaming\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\NetworkReplayStreaming;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\NetworkReplayStreaming\NetworkReplayStreaming\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\PhysicsCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\PhysicsCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\PhysicsCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Chaos\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Chaos\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Experimental;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Experimental\Chaos\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ChaosCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ChaosCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Experimental\ChaosCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\Intel;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Voronoi\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Voronoi\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Experimental\Voronoi\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\GeometryCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\GeometryCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\GeometryCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SignalProcessing\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SignalProcessing\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SignalProcessing\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AudioExtensions\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AudioExtensions\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AudioExtensions\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AudioMixerCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AudioMixerCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AudioMixerCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AudioLinkCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AudioLinkCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AudioLink;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AudioLink\AudioLinkCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\CookOnTheFly\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\CookOnTheFly\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Networking\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Networking\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Networking\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ClothSysRuntimeIntrfc\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ClothSysRuntimeIntrfc\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\ClothingSystemRuntimeInterface\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\IrisCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\IrisCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Experimental\Iris;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Experimental\Iris\Core\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AudioMixer\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AudioMixer\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AudioMixer\Classes;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AudioMixer\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TargetPlatform\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TargetPlatform\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TargetPlatform\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TextureFormat\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TextureFormat\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TextureFormat\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MovieSceneCapture\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MovieSceneCapture\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\MovieSceneCapture\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TypedElementFramework\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TypedElementFramework\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\TypedElementFramework\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TypedElementRuntime\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TypedElementRuntime\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\TypedElementRuntime\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\HeadMountedDisplay\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\HeadMountedDisplay\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\HeadMountedDisplay\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AugmentedReality\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\AugmentedReality\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AugmentedReality\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MRMesh\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MRMesh\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\MRMesh\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\InstallBundleManager\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\InstallBundleManager\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\InstallBundleManager\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MediaUtils\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MediaUtils\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\MediaUtils\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Media\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\Media\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Media\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MoviePlayer\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MoviePlayer\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\MoviePlayer\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MoviePlayerProxy\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\MoviePlayerProxy\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\MoviePlayerProxy\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\PreLoadScreen\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\PreLoadScreen\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\PreLoadScreen\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ProfilerService\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ProfilerService\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\ProfilerService\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ReplicationSystemTestPlugin\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ReplicationSystemTestPlugin\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Runtime\ReplicationSystemTestPlugin;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Runtime\ReplicationSystemTestPlugin\Source\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SessionServices\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SessionServices\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SessionServices\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SlateNullRenderer\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SlateNullRenderer\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SlateNullRenderer\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SlateRHIRenderer\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\SlateRHIRenderer\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SlateRHIRenderer\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TaskGraph\UHT;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt;;</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\ReplicationSystemTest\ReplicationSystemTest.Target.cs"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\ReplicationSystemTest\ReplicationSystemTest.Build.cs"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\ReplicationSystemTest\Private\AutomationTestRunner.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TaskGraph\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TaskGraph\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\DerivedDataCache\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\DerivedDataCache\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\DerivedDataCache\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ReplicationSystemTest\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ReplicationSystemTest\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Programs;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Launch\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Development\Engine\SharedPCH.Engine.ShadowErrors.h;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Development\ReplicationSystemTest\Definitions.ReplicationSystemTest.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\ReplicationSystemTest\Private\AutomationTestRunner.h"/>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\ReplicationSystemTest\Private\NullTestRunner.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\ReplicationSystemTest\Private\ReplicationSystemTest.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TaskGraph\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TaskGraph\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\DerivedDataCache\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\DerivedDataCache\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\DerivedDataCache\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ReplicationSystemTest\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ReplicationSystemTest\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Programs;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Launch\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Development\Engine\SharedPCH.Engine.ShadowErrors.h;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Development\ReplicationSystemTest\Definitions.ReplicationSystemTest.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\ReplicationSystemTest\Private\ReplicationSystemTest.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\ReplicationSystemTest\Private\ReplicationSystemTestFileModule.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\TaskGraph\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TaskGraph\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\DerivedDataCache\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\DerivedDataCache\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\DerivedDataCache\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ReplicationSystemTest\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Inc\ReplicationSystemTest\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Programs;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Launch\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Development\Engine\SharedPCH.Engine.ShadowErrors.h;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\ReplicationSystemTest\Development\ReplicationSystemTest\Definitions.ReplicationSystemTest.h</ForcedIncludeFiles>
+    </ClCompile>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

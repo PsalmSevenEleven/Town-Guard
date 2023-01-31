@@ -1,0 +1,27 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Town_Guard.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"..\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\CPP_AnimationInterface.gen.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\CPP_AttackInterface.gen.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\CPP_Guardsman.gen.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\CPP_TownGuardPlayerController.gen.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\CPP_Weapon.gen.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\DamageType_Slashing.gen.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\Town_Guard.init.gen.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\Town_GuardGameModeBase.gen.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\CPP_AnimationInterface.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\CPP_AttackInterface.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\CPP_Guardsman.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\CPP_TownGuardPlayerController.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\CPP_Weapon.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\DamageType_Slashing.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\Town_Guard.cpp.obj"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\Town_GuardGameModeBase.cpp.obj"
+"..\Intermediate\Build\Win64\UnrealEditor\Development\Default.rc2.res"
+/OUT:"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\UnrealEditor-Town_Guard.lib"

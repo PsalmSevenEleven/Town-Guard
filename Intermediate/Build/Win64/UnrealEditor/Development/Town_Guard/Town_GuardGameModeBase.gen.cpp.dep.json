@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\users\\caleb\\documents\\github\\town guard\\town_guard\\intermediate\\build\\win64\\unrealeditor\\inc\\town_guard\\uht\\town_guardgamemodebase.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\users\\caleb\\documents\\github\\town guard\\town_guard\\intermediate\\build\\win64\\unrealeditor\\development\\town_guard\\definitions.town_guard.h",
+            "d:\\users\\caleb\\documents\\github\\town guard\\town_guard\\source\\town_guard\\town_guardgamemodebase.h",
+            "d:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "d:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "d:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "d:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "d:\\users\\caleb\\documents\\github\\town guard\\town_guard\\intermediate\\build\\win64\\unrealeditor\\inc\\town_guard\\uht\\town_guardgamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

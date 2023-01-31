@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Town_Guard.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Town_Guard.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Town_GuardClient.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Town_GuardEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Town_GuardServer.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\README.md" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
+    <Filter Include="Source\Town_Guard">
+      <UniqueIdentifier>{0BA88F8F-EFBE-3664-BA5A-A294CE991A5C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Town_Guard\CPP_AnimationInterface.cpp">
+      <Filter>Source\Town_Guard</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Town_Guard\CPP_AnimationInterface.h">
+      <Filter>Source\Town_Guard</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Town_Guard\CPP_AttackInterface.cpp">
+      <Filter>Source\Town_Guard</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Town_Guard\CPP_AttackInterface.h">
+      <Filter>Source\Town_Guard</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Town_Guard\CPP_Guardsman.cpp">
+      <Filter>Source\Town_Guard</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Town_Guard\CPP_Guardsman.h">
+      <Filter>Source\Town_Guard</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Town_Guard\CPP_TownGuardPlayerController.cpp">
+      <Filter>Source\Town_Guard</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Town_Guard\CPP_TownGuardPlayerController.h">
+      <Filter>Source\Town_Guard</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Town_Guard\CPP_Weapon.cpp">
+      <Filter>Source\Town_Guard</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Town_Guard\CPP_Weapon.h">
+      <Filter>Source\Town_Guard</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Town_Guard\DamageType_Slashing.cpp">
+      <Filter>Source\Town_Guard</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Town_Guard\DamageType_Slashing.h">
+      <Filter>Source\Town_Guard</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Town_Guard\Town_Guard.Build.cs">
+      <Filter>Source\Town_Guard</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Town_Guard\Town_Guard.cpp">
+      <Filter>Source\Town_Guard</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Town_Guard\Town_Guard.h">
+      <Filter>Source\Town_Guard</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Town_Guard\Town_GuardGameModeBase.cpp">
+      <Filter>Source\Town_Guard</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Town_Guard\Town_GuardGameModeBase.h">
+      <Filter>Source\Town_Guard</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

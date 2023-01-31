@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Program|x64">
+      <Configuration>Debug_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Program|x64">
+      <Configuration>DebugGame_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Program|x64">
+      <Configuration>Development_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_Program|x64">
+      <Configuration>Test_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping_Program|x64">
+      <Configuration>Shipping_Program</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B87CD0D-E513-3B91-858E-E4B55724D15A}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <RootNamespace>UnrealMultiUserSlateServer</RootNamespace>
+    <PlatformToolset>v142</PlatformToolset>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <NMakeUseOemCodePage>true</NMakeUseOemCodePage>
+    <TargetRuntime>Native</TargetRuntime>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Invalid|x64'">
+    <NMakeBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>echo The selected platform/configuration is not valid for this target.</NMakeCleanCommandLine>
+    <NMakeOutput>Invalid Output</NMakeOutput>
+    <OutDir>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Unused\</OutDir>
+    <IntDir>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Unused\</IntDir>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" UnrealMultiUserSlateServer Win64 Debug -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealMultiUserSlateServer Win64 Debug -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" UnrealMultiUserSlateServer Win64 Debug -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealMultiUserSlateServer-Win64-Debug.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" UnrealMultiUserSlateServer Win64 DebugGame -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealMultiUserSlateServer Win64 DebugGame -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" UnrealMultiUserSlateServer Win64 DebugGame -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealMultiUserSlateServer-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" UnrealMultiUserSlateServer Win64 Development -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealMultiUserSlateServer Win64 Development -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" UnrealMultiUserSlateServer Win64 Development -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealMultiUserSlateServer.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" UnrealMultiUserSlateServer Win64 Test -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealMultiUserSlateServer Win64 Test -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" UnrealMultiUserSlateServer Win64 Test -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealMultiUserSlateServer-Win64-Test.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Program|x64'">
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+    <IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+    <NMakeBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" UnrealMultiUserSlateServer Win64 Shipping -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Rebuild.bat" UnrealMultiUserSlateServer Win64 Shipping -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"D:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Clean.bat" UnrealMultiUserSlateServer Win64 Shipping -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>D:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealMultiUserSlateServer-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);D:\Program Files\Epic Games\UE_5.1\Engine\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Launch\Private;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Private;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Core\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Core\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\TraceLog\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Core\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\TraceLog\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\TraceLog\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\CoreUObject\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\CoreUObject\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\CoreUObject\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertMain\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Concert\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertMain\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Concert\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertMain\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertMain\Source\Concert\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertMain\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ConcertTransport\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertMain\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ConcertTransport\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertMain\Source\ConcertTransport\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\MessagingCommon\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\MessagingCommon\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\MessagingCommon\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Messaging\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Messaging\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Messaging\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Serialization\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Serialization\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Serialization\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Json\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Json\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Json\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Cbor\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Cbor\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Cbor\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\TraceInsights\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\TraceInsights\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TraceInsights\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\AppFramework\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\AppFramework\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\AppFramework\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ApplicationCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ApplicationCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\ApplicationCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\RHI\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\RHI\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\RHI\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Slate\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Slate\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Slate\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\InputCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\InputCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\InputCore\Classes;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\InputCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\SlateCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\SlateCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SlateCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ImageWrapper\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ImageWrapper\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\ImageWrapper\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ImageCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ImageCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\ImageCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\DesktopPlatform\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\DesktopPlatform\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\DesktopPlatform\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\RenderCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\RenderCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\RenderCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Sockets\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Sockets\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Sockets\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\NetCommon\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\NetCommon\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Net;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Net\Common\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\SourceCodeAccess\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\SourceCodeAccess\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\SourceCodeAccess\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Settings\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Settings\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\Settings\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\TraceAnalysis\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\TraceAnalysis\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TraceAnalysis\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\TraceServices\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\TraceServices\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\TraceServices\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\WorkspaceMenuStructure\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\WorkspaceMenuStructure\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Editor;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Editor\WorkspaceMenuStructure\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\XmlParser\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\XmlParser\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\XmlParser\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Projects\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Projects\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Projects\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Launch\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\Launch\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Launch\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ProfilerService\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ProfilerService\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Developer\ProfilerService\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertSync\ConcertSyncCore\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ConcertSyncCore\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertSync\ConcertSyncCore\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\ConcertSyncCore\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertSync\ConcertSyncCore\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertSync\ConcertSyncCore\Source\ConcertSyncCore\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertSync\ConcertSyncServer\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\CncrtSyncSvr\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertSync\ConcertSyncServer\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\CncrtSyncSvr\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertSync\ConcertSyncServer\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertSync\ConcertSyncServer\Source\ConcertSyncServer\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertApp\MultiUserServer\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\MultiUserServer\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertApp\MultiUserServer\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\MultiUserServer\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertApp\MultiUserServer\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Plugins\Developer\Concert\ConcertApp\MultiUserServer\Source\MultiUserServer\Public;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\UnrealMultiUserSlateServer\UHT;D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Inc\UnrealMultiUserSlateServer\VNI;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Programs;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt;;</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++17</AdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\UnrealMultiUserSlateServer.Target.cs"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Programs\UnrealMultiUserSlateServer\Config\DefaultEngine.ini"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\UnrealMultiUserSlateServer.Build.cs"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Private\UnrealMultiUserSlateServerMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Development\UnrealMultiUserSlateServer\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Private\UnrealMultiUserSlateServerRun.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Development\UnrealMultiUserSlateServer\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Private\UnrealMultiUserSlateServerRun.h"/>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Private\Linux\LinuxUnrealMultiUserSlateServerMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Development\UnrealMultiUserSlateServer\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Private\Mac\MacUnrealMultiUserSlateServerMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Development\UnrealMultiUserSlateServer\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Private\Windows\WindowsUnrealMultiUserSlateServerMain.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\mimalloc\include;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source\Win64;D:\Program Files\Epic Games\UE_5.1\Engine\Source\ThirdParty\LibTiff\Source;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib;D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\SymsLib\syms;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Program Files\Epic Games\UE_5.1\Engine\Intermediate\Build\Win64\UnrealMultiUserSlateServer\Development\UnrealMultiUserSlateServer\Definitions.h</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Linux\UnrealMultiUserSlateServer.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\Info.plist"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\make_icns.sh"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.icns"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.iconset\icon_128x128.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.iconset\icon_128x128@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.iconset\icon_16x16.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.iconset\icon_16x16@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.iconset\icon_256x256.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.iconset\icon_256x256@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.iconset\icon_32x32.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.iconset\icon_32x32@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.iconset\icon_512x512.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Mac\UnrealMultiUserSlateServer.iconset\icon_512x512@2x.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Windows\make_ico.py"/>
+    <ResourceCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Windows\UnrealMultiUserSlateServer.rc"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Windows\UnrealMultiUserSlateServer_2.ico"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Windows\UnrealMultiUserSlateServer\icon_16x16.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Windows\UnrealMultiUserSlateServer\icon_24x24.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Windows\UnrealMultiUserSlateServer\icon_256x256.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Windows\UnrealMultiUserSlateServer\icon_32x32.png"/>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.1\Engine\Source\Programs\UnrealMultiUserSlateServer\Resources\Windows\UnrealMultiUserSlateServer\icon_48x48.png"/>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
