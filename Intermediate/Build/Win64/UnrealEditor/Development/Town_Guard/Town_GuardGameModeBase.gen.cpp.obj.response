@@ -1,4 +1,4 @@
-"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Inc\Town_Guard\UHT\Town_GuardGameModeBase.gen.cpp"
+"D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Intermediate\Build\Win64\UnrealEditor\Inc\Town_Guard\UHT\Town_GuardGameModeBase.gen.cpp"
 /I .
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
 /I Runtime
@@ -269,8 +269,8 @@
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
-/I "D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Inc\Town_Guard\UHT"
-/I "D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Source"
+/I "D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Intermediate\Build\Win64\UnrealEditor\Inc\Town_Guard\UHT"
+/I "D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Source"
 /I ..\Plugins\EnhancedInput\Intermediate\Build\Win64\UnrealEditor\Inc\EnhancedInput\UHT
 /I ..\Plugins\EnhancedInput\Source
 /I ..\Plugins\EnhancedInput\Source\EnhancedInput\Public
@@ -283,11 +283,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
 /FI"..\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
-/FI"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\Definitions.Town_Guard.h"
+/FI"D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\Definitions.Town_Guard.h"
 /Yu"..\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
 /Fp"..\Intermediate\Build\Win64\UnrealEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.pch"
-/Fo"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\Town_GuardGameModeBase.gen.cpp.obj"
-/sourceDependencies "D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\Town_GuardGameModeBase.gen.cpp.dep.json"
+/Fo"D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\Town_GuardGameModeBase.gen.cpp.obj"
+/sourceDependencies "D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\Town_GuardGameModeBase.gen.cpp.dep.json"
 /Zc:inline
 /nologo
 /Oi

@@ -8,11 +8,15 @@
       0 Warning(s)
       0 Error(s)
   
-  Time Elapsed 00:00:05.61
-  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -Target="Town_GuardEditor Win64 Development -Project=\"D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Town_Guard.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild
+  Time Elapsed 00:00:03.07
+  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -Target="Town_GuardEditor Win64 Development -Project=\"D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Town_Guard.uproject\"" -Target="ShaderCompileWorker Win64 Development -Quiet" -WaitMutex -FromMsBuild
   Log file: D:\Program Files\Epic Games\UE_5.1\Engine\Programs\UnrealBuildTool\Log.txt
   Using 'git status' to determine working set for adaptive non-unity build (D:\Program Files\Epic Games\UE_5.1).
-  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard).
+  Using 'git status' to determine working set for adaptive non-unity build (D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard).
+  Parsing headers for Town_GuardEditor
+    Running Internal UnrealHeaderTool "D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Town_Guard.uproject" "D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Intermediate\Build\Win64\Town_GuardEditor\Development\Town_GuardEditor.uhtmanifest" -WarningsAsErrors
+  Total of 3 written
+  Reflection code generated for Town_GuardEditor in 173.8763169 seconds
   Building Town_GuardEditor and ShaderCompileWorker...
   Using Visual Studio 2019 14.29.30147 toolchain (D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   [Upgrade]
@@ -23,16 +27,32 @@
   [Upgrade]
   Determining max actions to execute in parallel (4 physical cores, 4 logical cores)
     Executing up to 4 processes, one per physical core
-  Building 4 actions with 4 processes...
-  [1/4] Compile CPP_Weapon.cpp
-D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Source\Town_Guard\CPP_Guardsman.h(144): warning C4263: 'void ACPP_Guardsman::Jump(const FInputActionValue &)': member function does not override any base class virtual member function
-D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Source\Town_Guard\CPP_Guardsman.h(202): warning C4264: 'void ACharacter::Jump(void)': no override available for virtual member function from base 'ACharacter'; function is hidden
+  Building 8 actions with 4 processes...
+  [1/8] Compile Town_Guard.init.gen.cpp
+  [2/8] Compile CPP_Weapon.gen.cpp
+D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Source\Town_Guard\CPP_Guardsman.h(153): warning C4263: 'void ACPP_Guardsman::Jump(const FInputActionValue &)': member function does not override any base class virtual member function
+D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Source\Town_Guard\CPP_Guardsman.h(214): warning C4264: 'void ACharacter::Jump(void)': no override available for virtual member function from base 'ACharacter'; function is hidden
   D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Engine\Classes\GameFramework\Character.h(649): note: see declaration of 'ACharacter::Jump'
   D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Engine\Classes\GameFramework\Character.h(222): note: see declaration of 'ACharacter'
-  [2/4] Link UnrealEditor-Town_Guard.lib
-     Creating library D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\UnrealEditor-Town_Guard.lib and object D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\UnrealEditor-Town_Guard.exp
-  [3/4] Link UnrealEditor-Town_Guard.dll
-     Creating library D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\UnrealEditor-Town_Guard.suppressed.lib and object D:\Users\Caleb\Documents\GitHub\Town Guard\Town_Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\UnrealEditor-Town_Guard.suppressed.exp
-  [4/4] WriteMetadata Town_GuardEditor.target
-  Total time in Parallel executor: 24.25 seconds
-  Total execution time: 31.70 seconds
+  [3/8] Compile CPP_Guardsman.gen.cpp
+D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Source\Town_Guard\CPP_Guardsman.h(153): warning C4263: 'void ACPP_Guardsman::Jump(const FInputActionValue &)': member function does not override any base class virtual member function
+D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Source\Town_Guard\CPP_Guardsman.h(214): warning C4264: 'void ACharacter::Jump(void)': no override available for virtual member function from base 'ACharacter'; function is hidden
+  D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Engine\Classes\GameFramework\Character.h(649): note: see declaration of 'ACharacter::Jump'
+  D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Engine\Classes\GameFramework\Character.h(222): note: see declaration of 'ACharacter'
+  [4/8] Compile CPP_Weapon.cpp
+D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Source\Town_Guard\CPP_Guardsman.h(153): warning C4263: 'void ACPP_Guardsman::Jump(const FInputActionValue &)': member function does not override any base class virtual member function
+D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Source\Town_Guard\CPP_Guardsman.h(214): warning C4264: 'void ACharacter::Jump(void)': no override available for virtual member function from base 'ACharacter'; function is hidden
+  D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Engine\Classes\GameFramework\Character.h(649): note: see declaration of 'ACharacter::Jump'
+  D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Engine\Classes\GameFramework\Character.h(222): note: see declaration of 'ACharacter'
+  [5/8] Compile CPP_Guardsman.cpp
+D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Source\Town_Guard\CPP_Guardsman.h(153): warning C4263: 'void ACPP_Guardsman::Jump(const FInputActionValue &)': member function does not override any base class virtual member function
+D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Source\Town_Guard\CPP_Guardsman.h(214): warning C4264: 'void ACharacter::Jump(void)': no override available for virtual member function from base 'ACharacter'; function is hidden
+  D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Engine\Classes\GameFramework\Character.h(649): note: see declaration of 'ACharacter::Jump'
+  D:\Program Files\Epic Games\UE_5.1\Engine\Source\Runtime\Engine\Classes\GameFramework\Character.h(222): note: see declaration of 'ACharacter'
+  [6/8] Link UnrealEditor-Town_Guard.lib
+     Creating library D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\UnrealEditor-Town_Guard.lib and object D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\UnrealEditor-Town_Guard.exp
+  [7/8] Link UnrealEditor-Town_Guard.dll
+     Creating library D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\UnrealEditor-Town_Guard.suppressed.lib and object D:\Users\Caleb\Documents\GitHub\Town Guard\Town-Guard\Intermediate\Build\Win64\UnrealEditor\Development\Town_Guard\UnrealEditor-Town_Guard.suppressed.exp
+  [8/8] WriteMetadata Town_GuardEditor.target
+  Total time in Parallel executor: 53.98 seconds
+  Total execution time: 231.64 seconds

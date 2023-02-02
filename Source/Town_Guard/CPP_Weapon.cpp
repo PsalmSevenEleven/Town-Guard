@@ -86,4 +86,5 @@ void ACPP_Weapon::DamageEntity_Implementation(float Damage, float StaminaDrain, 
 	//Setting the health and stamina of the offended party
 	Target->Health -= Damage;
 	Target->Stamina -= StaminaDrain;
+	Target->MulticastStartStaminaRecharge();
 }

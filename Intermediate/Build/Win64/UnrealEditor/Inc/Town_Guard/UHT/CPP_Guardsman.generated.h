@@ -23,6 +23,7 @@ static inline void FAttackDelegate_DelegateWrapper(const FMulticastScriptDelegat
 
 #define FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Guardsman_h_25_SPARSE_DATA
 #define FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Guardsman_h_25_RPC_WRAPPERS \
+	virtual void MulticastStartStaminaRecharge_Implementation(); \
 	virtual void ServerSetStamina_Implementation(float NewStamina); \
 	virtual void ServerSetHealth_Implementation(float NewHealth); \
 	virtual void ServerSetAttackLoadAlpha_Implementation(float NewAlpha, bool NewCharge); \
@@ -32,6 +33,7 @@ static inline void FAttackDelegate_DelegateWrapper(const FMulticastScriptDelegat
 	virtual void ServerSetStance_Implementation(Stance NewStance); \
 	virtual void ServerLook_Implementation(FRotator Rot); \
  \
+	DECLARE_FUNCTION(execMulticastStartStaminaRecharge); \
 	DECLARE_FUNCTION(execServerSetStamina); \
 	DECLARE_FUNCTION(execServerSetHealth); \
 	DECLARE_FUNCTION(execSetHealth); \
@@ -44,6 +46,7 @@ static inline void FAttackDelegate_DelegateWrapper(const FMulticastScriptDelegat
 
 
 #define FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Guardsman_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void MulticastStartStaminaRecharge_Implementation(); \
 	virtual void ServerSetStamina_Implementation(float NewStamina); \
 	virtual void ServerSetHealth_Implementation(float NewHealth); \
 	virtual void ServerSetAttackLoadAlpha_Implementation(float NewAlpha, bool NewCharge); \
@@ -53,6 +56,7 @@ static inline void FAttackDelegate_DelegateWrapper(const FMulticastScriptDelegat
 	virtual void ServerSetStance_Implementation(Stance NewStance); \
 	virtual void ServerLook_Implementation(FRotator Rot); \
  \
+	DECLARE_FUNCTION(execMulticastStartStaminaRecharge); \
 	DECLARE_FUNCTION(execServerSetStamina); \
 	DECLARE_FUNCTION(execServerSetHealth); \
 	DECLARE_FUNCTION(execSetHealth); \

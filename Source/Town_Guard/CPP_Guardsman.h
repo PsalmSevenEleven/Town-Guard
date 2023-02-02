@@ -102,6 +102,15 @@ public:
 	UPROPERTY(BlueprintReadWrite, Replicated)
 		float Stamina;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		float StaminaRechargeRate;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		float StaminaRechargeDelay;
+
+	FTimerHandle StaminaRechargeTimerHandle;
+
+	bool bRechargingStamina;
 
 	//A reference to the weapon the player is currently holding
 	class ACPP_Weapon* CurrentWeapon;
@@ -186,7 +195,7 @@ public:
 
 	//Set the player's health; also calls ServerSetHealth()
 	UFUNCTION(BlueprintCallable)
-	void SetHealth( float NewHealth);
+	void SetHealth(float NewHealth);
 	
 	//Tell the server the player's health
 	UFUNCTION(Server, Reliable)
@@ -198,5 +207,8 @@ public:
 	//Tell the server the player's stamina
 	UFUNCTION(Server, Reliable)
 		void ServerSetStamina(float NewStamina);
+
+	UFUNCTION(NetMulticast, Reliable)
+	void MulticastStartStaminaRecharge();
 
 };

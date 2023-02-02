@@ -84,6 +84,17 @@ void ACPP_Guardsman::Tick(float DeltaTime)
 	{
 		ServerSetAttackLoadAlpha(AttackLoadAlpha, bAttackCharged);
 	}
+
+	if (bRechargingStamina)
+	{
+		Stamina += StaminaRechargeRate * DeltaTime;
+
+		if (Stamina > 100.f)
+		{
+			bRechargingStamina = false;
+			Stamina = 100.f;
+		}
+	}
 }
 
 // Called to bind functionality to input
@@ -320,6 +331,13 @@ void ACPP_Guardsman::ServerSetAttacking_Implementation(bool NewAttacking)
 /*Loading an attack*/
 void ACPP_Guardsman::LoadAttack()
 {
+	if (Stamina < CurrentWeapon->StaminaForSwing)
+	{
+		//Make the stamina bar flash red to tell the player why they can't swing
+
+
+		return;
+	}
 	//Don't allow the player to spam the attack button
 	if (!bAttacking)
 	{
@@ -342,6 +360,14 @@ void ACPP_Guardsman::FireAttack()
 	ServerSetAttacking(true);
 	ServerSetAttackLoaded(false);
 	
+	bRechargingStamina = false;
+
+	Stamina -= CurrentWeapon->StaminaForSwing;
+	ServerSetStamina(Stamina);
+
+	GetWorld()->GetTimerManager().ClearTimer(StaminaRechargeTimerHandle);
+	GetWorld()->GetTimerManager().SetTimer(StaminaRechargeTimerHandle, FTimerDelegate::CreateLambda([&] {bRechargingStamina = true; }), StaminaRechargeDelay, false);
+
 	AttackReleaseDelegate.Broadcast();
 	
 	/*Temporary band-aid code that tells the server that the player is done attacking after an arbitrarily chosen 0.5-second period.
@@ -382,6 +408,13 @@ void ACPP_Guardsman::SetStamina(float NewStamina)
 {
 	Stamina = NewStamina;
 	ServerSetStamina(NewStamina);
+}
+
+void ACPP_Guardsman::MulticastStartStaminaRecharge_Implementation()
+{
+	bRechargingStamina = false;
+	GetWorld()->GetTimerManager().ClearTimer(StaminaRechargeTimerHandle);
+	GetWorld()->GetTimerManager().SetTimer(StaminaRechargeTimerHandle, FTimerDelegate::CreateLambda([&] {bRechargingStamina = true; }), StaminaRechargeDelay, false);
 }
 
 //Tell the server to set the player's Health value

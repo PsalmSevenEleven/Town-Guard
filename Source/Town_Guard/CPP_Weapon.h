@@ -42,6 +42,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float MaxStaminaDrain;
 
+	//How much stamina the weapon requires to swing
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float StaminaForSwing;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

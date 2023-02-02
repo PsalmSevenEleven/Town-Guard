@@ -255,6 +255,10 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Weapon() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxStaminaDrain_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxStaminaDrain;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_StaminaForSwing_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_StaminaForSwing;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -313,11 +317,21 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Weapon() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_MaxStaminaDrain = { "MaxStaminaDrain", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ACPP_Weapon, MaxStaminaDrain), METADATA_PARAMS(Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_MaxStaminaDrain_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_MaxStaminaDrain_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_StaminaForSwing_MetaData[] = {
+		{ "Category", "CPP_Weapon" },
+		{ "Comment", "//How much stamina the weapon requires to swing\n" },
+		{ "ModuleRelativePath", "CPP_Weapon.h" },
+		{ "ToolTip", "How much stamina the weapon requires to swing" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_StaminaForSwing = { "StaminaForSwing", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ACPP_Weapon, StaminaForSwing), METADATA_PARAMS(Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_StaminaForSwing_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_StaminaForSwing_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACPP_Weapon_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_HitBox,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_SkeletalMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_MaxDamage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_MaxStaminaDrain,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Weapon_Statics::NewProp_StaminaForSwing,
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ACPP_Weapon_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UCPP_AnimationInterface_NoRegister, (int32)VTABLE_OFFSET(ACPP_Weapon, ICPP_AnimationInterface), false },  // 2362408913
@@ -360,9 +374,9 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Weapon() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Weapon_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACPP_Weapon, ACPP_Weapon::StaticClass, TEXT("ACPP_Weapon"), &Z_Registration_Info_UClass_ACPP_Weapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACPP_Weapon), 3546862410U) },
+		{ Z_Construct_UClass_ACPP_Weapon, ACPP_Weapon::StaticClass, TEXT("ACPP_Weapon"), &Z_Registration_Info_UClass_ACPP_Weapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACPP_Weapon), 1917074848U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Weapon_h_1891269879(TEXT("/Script/Town_Guard"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Weapon_h_2274770529(TEXT("/Script/Town_Guard"),
 		Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Weapon_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Weapon_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -105,6 +105,13 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Guardsman() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(ACPP_Guardsman::execMulticastStartStaminaRecharge)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->MulticastStartStaminaRecharge_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ACPP_Guardsman::execServerSetStamina)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_NewStamina);
@@ -211,6 +218,11 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Guardsman() {}
 	{
 		bool NewDanger;
 	};
+	static FName NAME_ACPP_Guardsman_MulticastStartStaminaRecharge = FName(TEXT("MulticastStartStaminaRecharge"));
+	void ACPP_Guardsman::MulticastStartStaminaRecharge()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ACPP_Guardsman_MulticastStartStaminaRecharge),NULL);
+	}
 	static FName NAME_ACPP_Guardsman_ServerLook = FName(TEXT("ServerLook"));
 	void ACPP_Guardsman::ServerLook(FRotator Rot)
 	{
@@ -272,6 +284,7 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Guardsman() {}
 	{
 		UClass* Class = ACPP_Guardsman::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "MulticastStartStaminaRecharge", &ACPP_Guardsman::execMulticastStartStaminaRecharge },
 			{ "ServerLook", &ACPP_Guardsman::execServerLook },
 			{ "ServerSetAttacking", &ACPP_Guardsman::execServerSetAttacking },
 			{ "ServerSetAttackLoadAlpha", &ACPP_Guardsman::execServerSetAttackLoadAlpha },
@@ -283,6 +296,28 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Guardsman() {}
 			{ "SetHealth", &ACPP_Guardsman::execSetHealth },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ACPP_Guardsman_MulticastStartStaminaRecharge_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACPP_Guardsman_MulticastStartStaminaRecharge_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "CPP_Guardsman.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACPP_Guardsman_MulticastStartStaminaRecharge_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACPP_Guardsman, nullptr, "MulticastStartStaminaRecharge", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACPP_Guardsman_MulticastStartStaminaRecharge_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACPP_Guardsman_MulticastStartStaminaRecharge_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACPP_Guardsman_MulticastStartStaminaRecharge()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ACPP_Guardsman_MulticastStartStaminaRecharge_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ACPP_Guardsman_ServerLook_Statics
 	{
@@ -657,6 +692,14 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Guardsman() {}
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_Stamina;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_StaminaRechargeRate_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_StaminaRechargeRate;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_StaminaRechargeDelay_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_StaminaRechargeDelay;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_CurrentWeaponClass_MetaData[];
 #endif
 		static const UECodeGen_Private::FClassPropertyParams NewProp_CurrentWeaponClass;
@@ -670,6 +713,7 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Guardsman() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Town_Guard,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACPP_Guardsman_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ACPP_Guardsman_MulticastStartStaminaRecharge, "MulticastStartStaminaRecharge" }, // 2982242761
 		{ &Z_Construct_UFunction_ACPP_Guardsman_ServerLook, "ServerLook" }, // 3446039648
 		{ &Z_Construct_UFunction_ACPP_Guardsman_ServerSetAttacking, "ServerSetAttacking" }, // 2254954905
 		{ &Z_Construct_UFunction_ACPP_Guardsman_ServerSetAttackLoadAlpha, "ServerSetAttackLoadAlpha" }, // 302456370
@@ -828,6 +872,20 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Guardsman() {}
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_Stamina = { "Stamina", nullptr, (EPropertyFlags)0x0010000000000024, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ACPP_Guardsman, Stamina), METADATA_PARAMS(Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_Stamina_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_Stamina_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_StaminaRechargeRate_MetaData[] = {
+		{ "Category", "CPP_Guardsman" },
+		{ "ModuleRelativePath", "CPP_Guardsman.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_StaminaRechargeRate = { "StaminaRechargeRate", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ACPP_Guardsman, StaminaRechargeRate), METADATA_PARAMS(Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_StaminaRechargeRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_StaminaRechargeRate_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_StaminaRechargeDelay_MetaData[] = {
+		{ "Category", "CPP_Guardsman" },
+		{ "ModuleRelativePath", "CPP_Guardsman.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_StaminaRechargeDelay = { "StaminaRechargeDelay", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ACPP_Guardsman, StaminaRechargeDelay), METADATA_PARAMS(Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_StaminaRechargeDelay_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_StaminaRechargeDelay_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_CurrentWeaponClass_MetaData[] = {
 		{ "Category", "CPP_Guardsman" },
 		{ "Comment", "//The class of the weapon that the player is currently holding\n" },
@@ -852,6 +910,8 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Guardsman() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_bAttackCharged,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_Health,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_Stamina,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_StaminaRechargeRate,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_StaminaRechargeDelay,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACPP_Guardsman_Statics::NewProp_CurrentWeaponClass,
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ACPP_Guardsman_Statics::InterfaceParams[] = {
@@ -926,9 +986,9 @@ void EmptyLinkFunctionForGeneratedCodeCPP_Guardsman() {}
 		{ Stance_StaticEnum, TEXT("Stance"), &Z_Registration_Info_UEnum_Stance, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4292627029U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Guardsman_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACPP_Guardsman, ACPP_Guardsman::StaticClass, TEXT("ACPP_Guardsman"), &Z_Registration_Info_UClass_ACPP_Guardsman, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACPP_Guardsman), 62497139U) },
+		{ Z_Construct_UClass_ACPP_Guardsman, ACPP_Guardsman::StaticClass, TEXT("ACPP_Guardsman"), &Z_Registration_Info_UClass_ACPP_Guardsman, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACPP_Guardsman), 132048139U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Guardsman_h_3896834438(TEXT("/Script/Town_Guard"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Guardsman_h_2358195895(TEXT("/Script/Town_Guard"),
 		Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Guardsman_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Guardsman_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Guardsman_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Caleb_Documents_GitHub_Town_Guard_Town_Guard_Source_Town_Guard_CPP_Guardsman_h_Statics::EnumInfo));

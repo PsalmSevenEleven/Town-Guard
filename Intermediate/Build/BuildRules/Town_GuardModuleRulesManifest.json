@@ -1,10 +1,10 @@
 {
 	"SourceFiles": [
-		"D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town_Guard\\Source\\Town_Guard\\Town_Guard.Build.cs",
-		"D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town_Guard\\Source\\Town_Guard.Target.cs",
-		"D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town_Guard\\Source\\Town_GuardClient.Target.cs",
-		"D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town_Guard\\Source\\Town_GuardEditor.Target.cs",
-		"D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town_Guard\\Source\\Town_GuardServer.Target.cs"
+		"D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town-Guard\\Source\\Town_Guard\\Town_Guard.Build.cs",
+		"D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town-Guard\\Source\\Town_Guard.Target.cs",
+		"D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town-Guard\\Source\\Town_GuardClient.Target.cs",
+		"D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town-Guard\\Source\\Town_GuardEditor.Target.cs",
+		"D:\\Users\\Caleb\\Documents\\GitHub\\Town Guard\\Town-Guard\\Source\\Town_GuardServer.Target.cs"
 	],
 	"EngineVersion": "5.1.0"
 }
